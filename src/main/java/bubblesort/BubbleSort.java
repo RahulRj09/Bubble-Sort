@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class BubbleSort {
-    private static <T extends Comparable<T>> List<T> sort(List<T> elements) {
+    public static <T extends Comparable<T>> List<T> sort(List<T> elements) {
         List<T> copyElements = new ArrayList<>(elements);
         for (int i = 0; i < copyElements.size() - 1; i++) {
             for (int j = 0; j < copyElements.size() - i - 1; j++) {
